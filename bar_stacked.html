@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.1.min.js" integrity="sha384-JpP8FXbgAZLkfur7LiK3j9AGBhHNIvF742meBJrjO2ShJDhCG2I1uVvW+0DUtrmc" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="87760b45-622f-4dd3-b14b-548dfaccb1ce" data-root-id="34510"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="35608">
+          {"e0d74545-a9f4-447a-896c-5b4ba38f3431":{"roots":{"references":[{"attributes":{"below":[{"id":"34521"}],"center":[{"id":"34523"},{"id":"34527"},{"id":"34548"}],"left":[{"id":"34524"}],"outline_line_color":null,"plot_height":650,"plot_width":800,"renderers":[{"id":"34541"},{"id":"34554"},{"id":"34568"}],"title":{"id":"34511"},"toolbar":{"id":"34529"},"toolbar_location":null,"x_range":{"id":"34513"},"x_scale":{"id":"34517"},"y_range":{"id":"34515"},"y_scale":{"id":"34519"}},"id":"34510","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"34544"},"major_label_orientation":1.5707963267948966,"minor_tick_line_color":null,"ticker":{"id":"34522"}},"id":"34521","type":"CategoricalAxis"},{"attributes":{"fields":["Confirmed","Deaths"]},"id":"34534","type":"Stack"},{"attributes":{"callback":null,"tooltips":"$name @countries: @$name"},"id":"34528","type":"HoverTool"},{"attributes":{},"id":"34546","type":"BasicTickFormatter"},{"attributes":{"start":0},"id":"34515","type":"DataRange1d"},{"attributes":{"text":"Logarithmic scale of COVID-19 infection for top-50 countries for infections"},"id":"34511","type":"Title"},{"attributes":{},"id":"34544","type":"CategoricalTickFormatter"},{"attributes":{},"id":"34517","type":"CategoricalScale"},{"attributes":{},"id":"34525","type":"BasicTicker"},{"attributes":{"fields":["Confirmed","Deaths"]},"id":"34535","type":"Stack"},{"attributes":{"label":{"value":"Confirmed"},"renderers":[{"id":"34541"}]},"id":"34549","type":"LegendItem"},{"attributes":{"factors":["USA","ESP","ITA","DEU","FRA","CHN","IRN","GBR","TUR","BEL","CHE","NLD","BRA","PRT","AUT","KOR","CAN","ISR","RUS","SWE","NOR","IRL","IND","CHL","DNK","CZE","POL","ROU","ECU","PER","PAK","JPN","MYS","PHL","LUX","IDN","SAU","MEX","AUS","SRB","ARE","FIN","THA","PAN","QAT","DOM","COL","GRC","ZAF","ARG"],"range_padding":0.1},"id":"34513","type":"FactorRange"},{"attributes":{"bottom":{"expr":{"id":"34533"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#F8C471"},"line_alpha":{"value":0.1},"line_color":{"value":"#F8C471"},"top":{"expr":{"id":"34534"}},"width":{"value":0.9},"x":{"field":"countries"}},"id":"34553","type":"VBar"},{"attributes":{},"id":"34522","type":"CategoricalTicker"},{"attributes":{},"id":"34561","type":"UnionRenderers"},{"attributes":{},"id":"35408","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"34564"},"glyph":{"id":"34566"},"hover_glyph":null,"muted_glyph":null,"name":"Recovered","nonselection_glyph":{"id":"34567"},"selection_glyph":null,"view":{"id":"34569"}},"id":"34568","type":"GlyphRenderer"},{"attributes":{"bottom":{"expr":{"id":"34531"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#CD6155"},"line_alpha":{"value":0.1},"line_color":{"value":"#CD6155"},"top":{"expr":{"id":"34532"}},"width":{"value":0.9},"x":{"field":"countries"}},"id":"34540","type":"VBar"},{"attributes":{},"id":"35409","type":"Selection"},{"attributes":{"data":{"Confirmed":{"__ndarray__":"AAAAAKhwAkEAAAAA4BcCQQAAAADwBAFBAAAAAACp+0AAAAAAYJP7QAAAAACwjfBAAAAAAECJ70AAAAAAoKftQAAAAABAquJAAAAAAMDa1kAAAAAAALzWQAAAAABAEdRAAAAAAACVz0AAAAAAgKrJQAAAAAAAR8lAAAAAAABIxEAAAAAAgJfDQAAAAAAAXsJAAAAAAADwwEAAAAAAgHHAQAAAAAAAxrdAAAAAAAC6t0AAAAAAABy3QAAAAAAAqrVAAAAAAAAatUAAAAAAAMC0QAAAAAAAVbRAAAAAAACZskAAAAAAAGKxQAAAAAAA9rBAAAAAAACnsEAAAAAAAKGwQAAAAAAAF7BAAAAAAAA8rkAAAAAAALSnQAAAAAAAGKdAAAAAAADopkAAAAAAAMKlQAAAAAAAXKVAAAAAAADUpEAAAAAAAMakQAAAAAAAbqNAAAAAAACCokAAAAAAAJKhQAAAAAAARKFAAAAAAAB+oEAAAAAAAAygQAAAAAAAcJ1AAAAAAADUnEAAAAAAAMyaQA==","dtype":"float64","shape":[50]},"Deaths":{"__ndarray__":"AAAAAAB8uEAAAAAAAOTMQAAAAABAQdFAAAAAAABaokAAAAAAgDrFQAAAAAAAGqlAAAAAAAAyr0AAAAAAALm7QAAAAAAAYIlAAAAAAACAoUAAAAAAAPiLQAAAAAAAkKFAAAAAAACYiUAAAAAAAMB3QAAAAAAAEHFAAAAAAAAAaUAAAAAAAOBlQAAAAAAAQFJAAAAAAACAT0AAAAAAAHiFQAAAAAAAQFlAAAAAAABgbUAAAAAAAEBmQAAAAAAAAEhAAAAAAABAa0AAAAAAAMBYQAAAAAAA4GNAAAAAAACAa0AAAAAAAEBuQAAAAAAAQF5AAAAAAACATkAAAAAAAEBXQAAAAAAAQFBAAAAAAADAZkAAAAAAAABHQAAAAAAAAG5AAAAAAACAREAAAAAAAKBhQAAAAAAAADVAAAAAAABAUEAAAAAAAAAoQAAAAAAAAERAAAAAAAAAPkAAAAAAAIBNQAAAAAAAABhAAAAAAAAAW0AAAAAAAABLQAAAAAAAwFRAAAAAAAAAMkAAAAAAAIBPQA==","dtype":"float64","shape":[50]},"Recovered":{"__ndarray__":"AAAAAMAB10AAAAAAoHLnQAAAAADA3tlAAAAAAICb5kAAAAAAgMHUQAAAAADAUe9AAAAAAAAd3UAAAAAAAOBgQAAAAAAA2JxAAAAAAABJskAAAAAAACTDQAAAAAAAQG9AAAAAAADAX0AAAAAAAIBoQAAAAAAAoLFAAAAAAAB4ukAAAAAAADqwQAAAAAAACIlAAAAAAAAggkAAAAAAAKBpQAAAAAAAAEBAAAAAAAAAOUAAAAAAAKB/QAAAAAAAbJFAAAAAAABUmUAAAAAAACBtQAAAAAAAwGtAAAAAAACAgEAAAAAAAIBhQAAAAAAA1JRAAAAAAAAwfUAAAAAAAHCDQAAAAAAAPJdAAAAAAAAAWEAAAAAAAEB/QAAAAAAAwGtAAAAAAAC4g0AAAAAAAMiDQAAAAAAAYINAAAAAAAAALkAAAAAAAOBtQAAAAAAAwHJAAAAAAADAi0AAAAAAAAAwQAAAAAAAQGZAAAAAAAAASUAAAAAAAMBeQAAAAAAA0HBAAAAAAADAV0AAAAAAAGB2QA==","dtype":"float64","shape":[50]},"countries":["USA","ESP","ITA","DEU","FRA","CHN","IRN","GBR","TUR","BEL","CHE","NLD","BRA","PRT","AUT","KOR","CAN","ISR","RUS","SWE","NOR","IRL","IND","CHL","DNK","CZE","POL","ROU","ECU","PER","PAK","JPN","MYS","PHL","LUX","IDN","SAU","MEX","AUS","SRB","ARE","FIN","THA","PAN","QAT","DOM","COL","GRC","ZAF","ARG"]},"selected":{"id":"34578"},"selection_policy":{"id":"34577"}},"id":"34550","type":"ColumnDataSource"},{"attributes":{},"id":"34519","type":"LinearScale"},{"attributes":{"fields":["Confirmed"]},"id":"34532","type":"Stack"},{"attributes":{"fields":[]},"id":"34531","type":"Stack"},{"attributes":{},"id":"34562","type":"Selection"},{"attributes":{"data_source":{"id":"34550"},"glyph":{"id":"34552"},"hover_glyph":null,"muted_glyph":null,"name":"Deaths","nonselection_glyph":{"id":"34553"},"selection_glyph":null,"view":{"id":"34555"}},"id":"34554","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Deaths"},"renderers":[{"id":"34554"}]},"id":"34563","type":"LegendItem"},{"attributes":{"source":{"id":"34550"}},"id":"34555","type":"CDSView"},{"attributes":{"formatter":{"id":"34546"},"minor_tick_line_color":null,"ticker":{"id":"34525"}},"id":"34524","type":"LinearAxis"},{"attributes":{"fields":["Confirmed"]},"id":"34533","type":"Stack"},{"attributes":{"items":[{"id":"34549"},{"id":"34563"},{"id":"34579"}],"orientation":"horizontal"},"id":"34548","type":"Legend"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"34528"}]},"id":"34529","type":"Toolbar"},{"attributes":{"axis":{"id":"34524"},"dimension":1,"ticker":null},"id":"34527","type":"Grid"},{"attributes":{"data_source":{"id":"34537"},"glyph":{"id":"34539"},"hover_glyph":null,"muted_glyph":null,"name":"Confirmed","nonselection_glyph":{"id":"34540"},"selection_glyph":null,"view":{"id":"34542"}},"id":"34541","type":"GlyphRenderer"},{"attributes":{"bottom":{"expr":{"id":"34533"}},"fill_color":{"value":"#F8C471"},"line_color":{"value":"#F8C471"},"top":{"expr":{"id":"34534"}},"width":{"value":0.9},"x":{"field":"countries"}},"id":"34552","type":"VBar"},{"attributes":{"source":{"id":"34537"}},"id":"34542","type":"CDSView"},{"attributes":{"data":{"Confirmed":{"__ndarray__":"AAAAAKhwAkEAAAAA4BcCQQAAAADwBAFBAAAAAACp+0AAAAAAYJP7QAAAAACwjfBAAAAAAECJ70AAAAAAoKftQAAAAABAquJAAAAAAMDa1kAAAAAAALzWQAAAAABAEdRAAAAAAACVz0AAAAAAgKrJQAAAAAAAR8lAAAAAAABIxEAAAAAAgJfDQAAAAAAAXsJAAAAAAADwwEAAAAAAgHHAQAAAAAAAxrdAAAAAAAC6t0AAAAAAABy3QAAAAAAAqrVAAAAAAAAatUAAAAAAAMC0QAAAAAAAVbRAAAAAAACZskAAAAAAAGKxQAAAAAAA9rBAAAAAAACnsEAAAAAAAKGwQAAAAAAAF7BAAAAAAAA8rkAAAAAAALSnQAAAAAAAGKdAAAAAAADopkAAAAAAAMKlQAAAAAAAXKVAAAAAAADUpEAAAAAAAMakQAAAAAAAbqNAAAAAAACCokAAAAAAAJKhQAAAAAAARKFAAAAAAAB+oEAAAAAAAAygQAAAAAAAcJ1AAAAAAADUnEAAAAAAAMyaQA==","dtype":"float64","shape":[50]},"Deaths":{"__ndarray__":"AAAAAAB8uEAAAAAAAOTMQAAAAABAQdFAAAAAAABaokAAAAAAgDrFQAAAAAAAGqlAAAAAAAAyr0AAAAAAALm7QAAAAAAAYIlAAAAAAACAoUAAAAAAAPiLQAAAAAAAkKFAAAAAAACYiUAAAAAAAMB3QAAAAAAAEHFAAAAAAAAAaUAAAAAAAOBlQAAAAAAAQFJAAAAAAACAT0AAAAAAAHiFQAAAAAAAQFlAAAAAAABgbUAAAAAAAEBmQAAAAAAAAEhAAAAAAABAa0AAAAAAAMBYQAAAAAAA4GNAAAAAAACAa0AAAAAAAEBuQAAAAAAAQF5AAAAAAACATkAAAAAAAEBXQAAAAAAAQFBAAAAAAADAZkAAAAAAAABHQAAAAAAAAG5AAAAAAACAREAAAAAAAKBhQAAAAAAAADVAAAAAAABAUEAAAAAAAAAoQAAAAAAAAERAAAAAAAAAPkAAAAAAAIBNQAAAAAAAABhAAAAAAAAAW0AAAAAAAABLQAAAAAAAwFRAAAAAAAAAMkAAAAAAAIBPQA==","dtype":"float64","shape":[50]},"Recovered":{"__ndarray__":"AAAAAMAB10AAAAAAoHLnQAAAAADA3tlAAAAAAICb5kAAAAAAgMHUQAAAAADAUe9AAAAAAAAd3UAAAAAAAOBgQAAAAAAA2JxAAAAAAABJskAAAAAAACTDQAAAAAAAQG9AAAAAAADAX0AAAAAAAIBoQAAAAAAAoLFAAAAAAAB4ukAAAAAAADqwQAAAAAAACIlAAAAAAAAggkAAAAAAAKBpQAAAAAAAAEBAAAAAAAAAOUAAAAAAAKB/QAAAAAAAbJFAAAAAAABUmUAAAAAAACBtQAAAAAAAwGtAAAAAAACAgEAAAAAAAIBhQAAAAAAA1JRAAAAAAAAwfUAAAAAAAHCDQAAAAAAAPJdAAAAAAAAAWEAAAAAAAEB/QAAAAAAAwGtAAAAAAAC4g0AAAAAAAMiDQAAAAAAAYINAAAAAAAAALkAAAAAAAOBtQAAAAAAAwHJAAAAAAADAi0AAAAAAAAAwQAAAAAAAQGZAAAAAAAAASUAAAAAAAMBeQAAAAAAA0HBAAAAAAADAV0AAAAAAAGB2QA==","dtype":"float64","shape":[50]},"countries":["USA","ESP","ITA","DEU","FRA","CHN","IRN","GBR","TUR","BEL","CHE","NLD","BRA","PRT","AUT","KOR","CAN","ISR","RUS","SWE","NOR","IRL","IND","CHL","DNK","CZE","POL","ROU","ECU","PER","PAK","JPN","MYS","PHL","LUX","IDN","SAU","MEX","AUS","SRB","ARE","FIN","THA","PAN","QAT","DOM","COL","GRC","ZAF","ARG"]},"selected":{"id":"34562"},"selection_policy":{"id":"34561"}},"id":"34537","type":"ColumnDataSource"},{"attributes":{"label":{"value":"Recovered"},"renderers":[{"id":"34568"}]},"id":"34579","type":"LegendItem"},{"attributes":{},"id":"34577","type":"UnionRenderers"},{"attributes":{"source":{"id":"34564"}},"id":"34569","type":"CDSView"},{"attributes":{"data":{"Confirmed":{"__ndarray__":"AAAAAKhwAkEAAAAA4BcCQQAAAADwBAFBAAAAAACp+0AAAAAAYJP7QAAAAACwjfBAAAAAAECJ70AAAAAAoKftQAAAAABAquJAAAAAAMDa1kAAAAAAALzWQAAAAABAEdRAAAAAAACVz0AAAAAAgKrJQAAAAAAAR8lAAAAAAABIxEAAAAAAgJfDQAAAAAAAXsJAAAAAAADwwEAAAAAAgHHAQAAAAAAAxrdAAAAAAAC6t0AAAAAAABy3QAAAAAAAqrVAAAAAAAAatUAAAAAAAMC0QAAAAAAAVbRAAAAAAACZskAAAAAAAGKxQAAAAAAA9rBAAAAAAACnsEAAAAAAAKGwQAAAAAAAF7BAAAAAAAA8rkAAAAAAALSnQAAAAAAAGKdAAAAAAADopkAAAAAAAMKlQAAAAAAAXKVAAAAAAADUpEAAAAAAAMakQAAAAAAAbqNAAAAAAACCokAAAAAAAJKhQAAAAAAARKFAAAAAAAB+oEAAAAAAAAygQAAAAAAAcJ1AAAAAAADUnEAAAAAAAMyaQA==","dtype":"float64","shape":[50]},"Deaths":{"__ndarray__":"AAAAAAB8uEAAAAAAAOTMQAAAAABAQdFAAAAAAABaokAAAAAAgDrFQAAAAAAAGqlAAAAAAAAyr0AAAAAAALm7QAAAAAAAYIlAAAAAAACAoUAAAAAAAPiLQAAAAAAAkKFAAAAAAACYiUAAAAAAAMB3QAAAAAAAEHFAAAAAAAAAaUAAAAAAAOBlQAAAAAAAQFJAAAAAAACAT0AAAAAAAHiFQAAAAAAAQFlAAAAAAABgbUAAAAAAAEBmQAAAAAAAAEhAAAAAAABAa0AAAAAAAMBYQAAAAAAA4GNAAAAAAACAa0AAAAAAAEBuQAAAAAAAQF5AAAAAAACATkAAAAAAAEBXQAAAAAAAQFBAAAAAAADAZkAAAAAAAABHQAAAAAAAAG5AAAAAAACAREAAAAAAAKBhQAAAAAAAADVAAAAAAABAUEAAAAAAAAAoQAAAAAAAAERAAAAAAAAAPkAAAAAAAIBNQAAAAAAAABhAAAAAAAAAW0AAAAAAAABLQAAAAAAAwFRAAAAAAAAAMkAAAAAAAIBPQA==","dtype":"float64","shape":[50]},"Recovered":{"__ndarray__":"AAAAAMAB10AAAAAAoHLnQAAAAADA3tlAAAAAAICb5kAAAAAAgMHUQAAAAADAUe9AAAAAAAAd3UAAAAAAAOBgQAAAAAAA2JxAAAAAAABJskAAAAAAACTDQAAAAAAAQG9AAAAAAADAX0AAAAAAAIBoQAAAAAAAoLFAAAAAAAB4ukAAAAAAADqwQAAAAAAACIlAAAAAAAAggkAAAAAAAKBpQAAAAAAAAEBAAAAAAAAAOUAAAAAAAKB/QAAAAAAAbJFAAAAAAABUmUAAAAAAACBtQAAAAAAAwGtAAAAAAACAgEAAAAAAAIBhQAAAAAAA1JRAAAAAAAAwfUAAAAAAAHCDQAAAAAAAPJdAAAAAAAAAWEAAAAAAAEB/QAAAAAAAwGtAAAAAAAC4g0AAAAAAAMiDQAAAAAAAYINAAAAAAAAALkAAAAAAAOBtQAAAAAAAwHJAAAAAAADAi0AAAAAAAAAwQAAAAAAAQGZAAAAAAAAASUAAAAAAAMBeQAAAAAAA0HBAAAAAAADAV0AAAAAAAGB2QA==","dtype":"float64","shape":[50]},"countries":["USA","ESP","ITA","DEU","FRA","CHN","IRN","GBR","TUR","BEL","CHE","NLD","BRA","PRT","AUT","KOR","CAN","ISR","RUS","SWE","NOR","IRL","IND","CHL","DNK","CZE","POL","ROU","ECU","PER","PAK","JPN","MYS","PHL","LUX","IDN","SAU","MEX","AUS","SRB","ARE","FIN","THA","PAN","QAT","DOM","COL","GRC","ZAF","ARG"]},"selected":{"id":"35409"},"selection_policy":{"id":"35408"}},"id":"34564","type":"ColumnDataSource"},{"attributes":{"bottom":{"expr":{"id":"34531"}},"fill_color":{"value":"#CD6155"},"line_color":{"value":"#CD6155"},"top":{"expr":{"id":"34532"}},"width":{"value":0.9},"x":{"field":"countries"}},"id":"34539","type":"VBar"},{"attributes":{},"id":"34578","type":"Selection"},{"attributes":{"axis":{"id":"34521"},"grid_line_color":null,"ticker":null},"id":"34523","type":"Grid"},{"attributes":{"bottom":{"expr":{"id":"34535"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#34495E"},"line_alpha":{"value":0.1},"line_color":{"value":"#34495E"},"top":{"expr":{"id":"34536"}},"width":{"value":0.9},"x":{"field":"countries"}},"id":"34567","type":"VBar"},{"attributes":{"bottom":{"expr":{"id":"34535"}},"fill_color":{"value":"#34495E"},"line_color":{"value":"#34495E"},"top":{"expr":{"id":"34536"}},"width":{"value":0.9},"x":{"field":"countries"}},"id":"34566","type":"VBar"},{"attributes":{"fields":["Confirmed","Deaths","Recovered"]},"id":"34536","type":"Stack"}],"root_ids":["34510"]},"title":"Bokeh Application","version":"2.0.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('35608').textContent;
+                  var render_items = [{"docid":"e0d74545-a9f4-447a-896c-5b4ba38f3431","root_ids":["34510"],"roots":{"34510":"87760b45-622f-4dd3-b14b-548dfaccb1ce"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
